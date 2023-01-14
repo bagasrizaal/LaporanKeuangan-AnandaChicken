@@ -1,0 +1,106 @@
+[2019-03-11:11:37:52] Nama Admin : saiful => Edit Hutang => 17 => Sukses 
+
+[2022-22-10:02:58:12] Nama Admin : riza => Edit Pemasukan => 24 => Sukses Edit
+
+[2022-22-10:02:58:33] Nama Admin : riza => Edit Pemasukan => 24 => Sukses Edit
+
+[2022-22-10:02:59:56] Nama Admin : riza => Edit Pemasukan => 26 => Sukses Edit
+
+[2022-22-10:03:00:16] Nama Admin : riza => Edit Pemasukan => 26 => Sukses Edit
+
+[2022-28-12:10:15:01] Nama Admin : riza2 => Edit Pemasukan => 33 => Sukses Edit
+
+[2022-28-12:12:04:49] Nama Admin : riza2 => Edit Pemasukan => 34 => Sukses Edit
+
+[2022-28-12:12:05:10] Nama Admin : riza2 => Edit Pemasukan => 34 => Sukses Edit
+
+[2022-28-12:12:05:33] Nama Admin : riza2 => Edit Pemasukan => 34 => Sukses Edit
+
+[2022-28-12:12:12:42] Nama Admin : riza2 => Edit Hutang => 18 => Sukses 
+
+[2022-28-12:18:37:54] Nama Admin : riza2 => Edit Pemasukan => 35 => Sukses Edit
+
+[2022-28-12:18:48:55] Nama Admin : riza2 => Edit Pemasukan => 35 => Sukses Edit
+
+[2022-28-12:18:56:25] Nama Admin : riza2 => Edit Pemasukan => 35 => Sukses Edit
+
+[2022-28-12:19:21:58] Nama Admin : riza2 => Edit Pemasukan => 36 => Sukses Edit
+
+[2023-01-01:16:34:22] Nama Admin : saiful => Edit Pemasukan => 36 => Sukses Edit
+
+[2023-01-01:16:54:02] Nama Admin : saiful => Edit Pemasukan => 35 => Sukses Edit
+
+[2023-01-01:17:52:35] Nama Admin : saiful => Edit Pemasukan => 41 => Sukses Edit
+
+[2023-01-01:17:55:56] Nama Admin : saiful => Edit Pemasukan => 41 => Sukses Edit
+
+[2023-01-01:18:01:04] UPDATE pemasukan SET tgl_pemasukan='2023-01-01' , jumlah='2500000', id_sumber='1' WHERE id_pemasukan='41'
+
+[2023-01-01:18:07:36] UPDATE pemasukan SET tgl_pemasukan='2022' , jumlah='2500000', id_sumber='1' WHERE id_pemasukan='41'
+
+[2023-01-01:18:08:35] UPDATE pemasukan SET tgl_pemasukan='2022' , jumlah='2500000', id_sumber='1' WHERE id_pemasukan='41'
+
+[2023-01-01:18:10:21] UPDATE pemasukan SET tgl_pemasukan='2022' , jumlah='2500000', id_sumber='1' WHERE id_pemasukan='41'
+
+[2023-01-01:18:11:11] UPDATE pemasukan SET tgl_pemasukan='2022-12-31' , jumlah='2500000', id_sumber='1' WHERE id_pemasukan='41'
+
+[2023-01-01:18:11:23] UPDATE pemasukan SET tgl_pemasukan='2022-12-30' , jumlah='320000', id_sumber='1' WHERE id_pemasukan='40'
+
+[2023-01-01:18:11:32] UPDATE pemasukan SET tgl_pemasukan='2022-12-28' , jumlah='650000', id_sumber='1' WHERE id_pemasukan='36'
+
+[2023-01-01:18:11:40] UPDATE pemasukan SET tgl_pemasukan='2023-01-27' , jumlah='360000', id_sumber='1' WHERE id_pemasukan='35'
+
+[2023-01-01:18:12:19] UPDATE pemasukan SET tgl_pemasukan='2023-01-25' , jumlah='360000', id_sumber='1' WHERE id_pemasukan='35'
+
+[2023-01-01:18:13:07] UPDATE pemasukan SET tgl_pemasukan='2023-01-27' , jumlah='360000', id_sumber='1' WHERE id_pemasukan='35'
+
+[2023-01-01:18:14:48] UPDATE pemasukan SET tgl_pemasukan='2022-12-27' , jumlah='360000', id_sumber='1' WHERE id_pemasukan='35'
+
+[2023-02-01:20:34:21] UPDATE pemasukan SET tgl_pemasukan='2022-12-27' , jumlah='360000', id_sumber='4' WHERE id_pemasukan='35'
+
+[2023-02-01:20:34:35] UPDATE pemasukan SET tgl_pemasukan='2022-12-30' , jumlah='320000', id_sumber='4' WHERE id_pemasukan='40'
+
+[2023-02-01:20:34:51] UPDATE pemasukan SET tgl_pemasukan='2022-12-26' , jumlah='50000', id_sumber='2' WHERE id_pemasukan='43'
+
+[2023-02-01:20:35:06] UPDATE pemasukan SET tgl_pemasukan='2022-12-28' , jumlah='650000', id_sumber='3' WHERE id_pemasukan='36'
+
+[2023-02-01:20:35:30] UPDATE pemasukan SET tgl_pemasukan='2022-12-27' , jumlah='360000', id_sumber='4' WHERE id_pemasukan='35'
+
+[2023-02-01:20:35:38] UPDATE pemasukan SET tgl_pemasukan='2022-12-27' , jumlah='360000', id_sumber='5' WHERE id_pemasukan='35'
+
+[2023-04-01:08:19:04] Nama Admin : Joko saputra => Edit Hutang => 24 => Sukses 
+
+[2023-04-01:08:31:23] Nama Admin : Joko saputra => Edit Hutang => 28 => Sukses 
+
+[2023-05-01:13:23:32] UPDATE pemasukan SET tgl_pemasukan='2023-01-01' , jumlah='550000', id_sumber='1' WHERE id_pemasukan='55'
+
+[2023-05-01:13:23:40] UPDATE pemasukan SET tgl_pemasukan='2023-01-02' , jumlah='100000', id_sumber='1' WHERE id_pemasukan='53'
+
+[2023-05-01:13:24:17] Nama Admin : riza2 => Edit Hutang => 33 => Sukses 
+
+[2023-05-01:13:24:23] Nama Admin : riza2 => Edit Hutang => 32 => Sukses 
+
+[2023-05-01:13:37:59] UPDATE pemasukan SET tgl_pemasukan='2023-01-05' , jumlah='550000', id_sumber='3' WHERE id_pemasukan='56'
+
+[2023-05-01:13:46:55] UPDATE pemasukan SET tgl_pemasukan='2023-01-05' , jumlah='550000', id_sumber='3' WHERE id_pemasukan='56'
+
+[2023-05-01:13:47:16] UPDATE pemasukan SET tgl_pemasukan='2023-01-05' , jumlah='150000', id_sumber='2' WHERE id_pemasukan='57'
+
+[2023-05-01:14:56:27] UPDATE pemasukan SET tgl_pemasukan='2022-12-30' , jumlah='550000', id_sumber='3' WHERE id_pemasukan='55'
+
+[2023-05-01:14:57:03] UPDATE pemasukan SET tgl_pemasukan='2023-01-01' , jumlah='2550000', id_sumber='3' WHERE id_pemasukan='56'
+
+[2023-05-01:14:57:30] UPDATE pemasukan SET tgl_pemasukan='2023-01-05' , jumlah='2000000', id_sumber='2' WHERE id_pemasukan='57'
+
+[2023-05-01:14:59:36] UPDATE pemasukan SET tgl_pemasukan='2022-12-31' , jumlah='1500000', id_sumber='5' WHERE id_pemasukan='58'
+
+[2023-05-01:20:54:41] UPDATE pemasukan SET tgl_pemasukan='2023-01-04' , jumlah='200000', id_sumber='3' WHERE id_pemasukan='63'
+
+[2023-05-01:21:00:56] UPDATE pemasukan SET tgl_pemasukan='2023-01-01' , jumlah='150000', id_sumber='4' WHERE id_pemasukan='60'
+
+[2023-05-01:21:01:07] UPDATE pemasukan SET tgl_pemasukan='2022-12-31' , jumlah='250000', id_sumber='5' WHERE id_pemasukan='59'
+
+[2023-13-01:17:45:00] UPDATE pemasukan SET tgl_pemasukan='2022-12-30' , jumlah='2500000', id_sumber='1' WHERE id_pemasukan='66'
+
+[2023-13-01:17:45:12] UPDATE pemasukan SET tgl_pemasukan='2023-01-06' , jumlah='550000', id_sumber='4' WHERE id_pemasukan='65'
+
