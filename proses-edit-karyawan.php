@@ -16,11 +16,14 @@ $query = mysqli_query($koneksi,"UPDATE admin SET nama='$nama' , email='$kontak' 
 if ($query) {
  # credirect ke page index
  header("location:karyawan.php"); 
+}
 
+else  {
+ echo "ERROR, data gagal diupdate". mysqli_error($koneksi);
 }
-else{
- echo "ERROR, data gagal diupdate". mysql_error();
-}
+// else{
+//  echo "ERROR, data gagal diupdate". mysql_error();
+// }
 
 //mysql_close($host);
 ?>
