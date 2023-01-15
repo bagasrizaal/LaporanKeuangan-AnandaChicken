@@ -12,7 +12,7 @@
 
 ## Screenshoot Export to excel :
 
-![export] (https://raw.githubusercontent.com/bagasrizaal/LaporanKeuangan-AnandaChicken/main/screenshot/hasilWebsite_downloadExcel.png?token=GHSAT0AAAAAAB422MG5WQVL4PDNFNMZY7G6Y6EGK3A)
+![export](https://raw.githubusercontent.com/bagasrizaal/LaporanKeuangan-AnandaChicken/main/screenshot/hasilWebsite_downloadExcel.png?token=GHSAT0AAAAAAB422MG5WQVL4PDNFNMZY7G6Y6EGK3A)
 
 Website Laporan Keuangan
 'Ananda Chicken'
