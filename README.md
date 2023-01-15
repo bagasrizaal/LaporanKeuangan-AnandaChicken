@@ -1,9 +1,9 @@
 # Website-laporan-keuangan-ananda-chicken
 
-## Screenshoot Login
+## Screenshoot Login :
 ![demo](https://raw.githubusercontent.com/bagasrizaal/LaporanKeuangan-AnandaChicken/updateTerbaru/screenshot/hasilWebsite_Login.png?token=GHSAT0AAAAAAB422MG44UO5ZHFGRTAF5SCWY6EGVRA)
 
-## Screenshoot Daftar Akun
+## Screenshoot Daftar Akun :
 ![demo](https://raw.githubusercontent.com/bagasrizaal/LaporanKeuangan-AnandaChicken/updateTerbaru/screenshot/hasilWebsite_daftarAkun.png?token=GHSAT0AAAAAAB422MG54XRMSF2JZXMKXCIAY6EGWAA)
 
 ## Screenshoot Dashboard :
