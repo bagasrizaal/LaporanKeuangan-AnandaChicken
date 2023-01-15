@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Jan 2023 pada 18.03
+-- Waktu pembuatan: 15 Jan 2023 pada 17.54
 -- Versi server: 10.4.25-MariaDB
 -- Versi PHP: 8.0.23
 
@@ -39,8 +39,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id_admin`, `nama`, `email`, `pass`) VALUES
-(1, 'Adzan Bari Naufal', 'bari12@mail.com', 'root'),
-(2, 'Joko saputra', 'joko666@mail.com', 'root');
+(3, 'Bagas Rizal Nur Akbar', 'kaze@mail.com', 'root'),
+(5, 'MR X', 'mrx@mail.com', 'root');
 
 -- --------------------------------------------------------
 
@@ -105,8 +105,8 @@ CREATE TABLE `karyawan` (
 --
 
 INSERT INTO `karyawan` (`id_karyawan`, `nama`, `posisi`, `alamat`, `umur`, `kontak`) VALUES
-(1, 'Adzan Bari Naufal', 'tuhan', 'langit', 999, 'bari12@mail.com'),
-(2, 'Joko saputra', 'tuhan', 'pemalang', 122, 'joko666@mail.com');
+(3, 'Bagas Rizal Nur Akbar', 'Programmer', 'Bogor', 22, 'kaze@mail.com'),
+(5, 'MR X', 'Pentesting', 'xxx', 24, 'mrx@mail.com');
 
 -- --------------------------------------------------------
 
@@ -163,7 +163,8 @@ INSERT INTO `pengeluaran` (`id_pengeluaran`, `tgl_pengeluaran`, `jumlah`, `id_su
 (45, '2023-01-02', 250000, 9),
 (46, '2023-01-03', 550000, 6),
 (47, '2023-01-10', 50000, 7),
-(48, '2023-01-11', 100000, 9);
+(48, '2023-01-11', 100000, 9),
+(49, '2023-01-14', 250000, 6);
 
 -- --------------------------------------------------------
 
@@ -268,7 +269,7 @@ ALTER TABLE `uang`
 -- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `catatan`
@@ -286,7 +287,7 @@ ALTER TABLE `hutang`
 -- AUTO_INCREMENT untuk tabel `karyawan`
 --
 ALTER TABLE `karyawan`
-  MODIFY `id_karyawan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_karyawan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `pemasukan`
@@ -298,7 +299,7 @@ ALTER TABLE `pemasukan`
 -- AUTO_INCREMENT untuk tabel `pengeluaran`
 --
 ALTER TABLE `pengeluaran`
-  MODIFY `id_pengeluaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `id_pengeluaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT untuk tabel `sumber`

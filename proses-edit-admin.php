@@ -9,7 +9,7 @@ $pass = $_GET['pass'];
 
 //query update tabel admin
 $query = mysqli_query($koneksi,"UPDATE admin SET nama='$nama' , email='$email', pass='$pass' WHERE id_admin='$id' ");
-//wueri edit tabel karyawan
+//query edit tabel karyawan
 $query = mysqli_query($koneksi,"UPDATE karyawan SET nama='$nama' , kontak='$email' WHERE id_karyawan='$id' ");
 if ($query) {
  # credirect ke page index
