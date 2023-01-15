@@ -1,10 +1,10 @@
 # Website-laporan-keuangan-ananda-chicken
 
 ## Screenshoot Login
-![demo](xxx)
+![demo](https://raw.githubusercontent.com/bagasrizaal/LaporanKeuangan-AnandaChicken/updateTerbaru/screenshot/hasilWebsite_Login.png?token=GHSAT0AAAAAAB422MG44UO5ZHFGRTAF5SCWY6EGVRA)
 
 ## Screenshoot Daftar Akun
-![demo](xxx)
+![demo](https://raw.githubusercontent.com/bagasrizaal/LaporanKeuangan-AnandaChicken/updateTerbaru/screenshot/hasilWebsite_daftarAkun.png?token=GHSAT0AAAAAAB422MG54XRMSF2JZXMKXCIAY6EGWAA)
 
 ## Screenshoot Dashboard :
 
@@ -12,7 +12,11 @@
 
 ## Screenshoot Export to excel :
 
-![export] (https://raw.githubusercontent.com/bagasrizaal/LaporanKeuangan-AnandaChicken/main/screenshot/hasilWebsite_downloadExcel.png?token=GHSAT0AAAAAAB422MG5WQVL4PDNFNMZY7G6Y6EGK3A)
+![export](https://raw.githubusercontent.com/bagasrizaal/LaporanKeuangan-AnandaChicken/main/screenshot/hasilWebsite_downloadExcel.png?token=GHSAT0AAAAAAB422MG5WQVL4PDNFNMZY7G6Y6EGK3A)
+
+## Logo Ananda Chicken by Me :
+
+![demo](https://raw.githubusercontent.com/bagasrizaal/LaporanKeuangan-AnandaChicken/updateTerbaru/img/LOGO_ANANDACHICKEN.png?token=GHSAT0AAAAAAB422MG4S4RG4CE6JJK3GEFAY6EGZSQ)
 
 Website Laporan Keuangan
 'Ananda Chicken'
@@ -20,3 +24,4 @@ Website Laporan Keuangan
 ## Bagas Rizal Nur Akbar
 ## 18102152
 ## TUGAS AKHIR
+## ITTP
