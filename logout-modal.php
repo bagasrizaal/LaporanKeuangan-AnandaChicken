@@ -8,10 +8,10 @@
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Pilih "Keluar" jika anda yakin ingin keluar.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-          <a class="btn btn-primary" href="keluar.php">Keluar</a>
+          <div class="modal-body">Pilih "Keluar" jika anda yakin ingin keluar.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+            <a class="btn btn-primary" href="keluar.php">Keluar</a>
         </div>
       </div>
     </div>

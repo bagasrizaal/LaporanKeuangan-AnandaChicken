@@ -42,6 +42,7 @@ $pengeluaran = mysqli_num_rows($pengeluaran);
 if(empty($pengeluaran)){
   $pengeluaran = 0;
 }
+
 $sekarang =mysqli_query($koneksi, "SELECT jumlah FROM hutang
 WHERE tgl_hutang = CURDATE()");
 $sekarang = mysqli_fetch_array($sekarang);
@@ -49,7 +50,6 @@ $sekarang = mysqli_fetch_array($sekarang);
 $satuhari =mysqli_query($koneksi, "SELECT jumlah FROM hutang
 WHERE tgl_hutang = CURDATE() - INTERVAL 1 DAY");
 $satuhari= mysqli_fetch_array($satuhari);
-
 
 $duahari =mysqli_query($koneksi, "SELECT jumlah FROM hutang
 WHERE tgl_hutang = CURDATE() - INTERVAL 2 DAY");
@@ -76,22 +76,19 @@ WHERE tgl_hutang = CURDATE() - INTERVAL 7 DAY");
 $tujuhhari= mysqli_fetch_array($tujuhhari);
 
 ?>
-
-      <!-- Main Content -->
-      <div id="content">
+  <!-- Main Content -->
+  <div id="content">
 	  
-<?php $halamanaktif = "Hutang";?>      
-<?php require 'navbar.php'; ?>
+  <?php $halamanaktif = "Hutang";?>      
+  <?php require 'navbar.php'; ?>
   
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Grafik Hutang</h1>
-<button type="button" class="btn btn-success" style="margin:5px" data-toggle="modal" data-target="#myModalTambah"><i class="fa fa-plus"> Hutang</i></button><br>
-          <!-- Content Row -->
-          <div class="row">
-
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+      <!-- Page Heading -->
+      <h1 class="h3 mb-2 text-gray-800">Grafik Hutang</h1>
+      <button type="button" class="btn btn-success" style="margin:5px" data-toggle="modal" data-target="#myModalTambah"><i class="fa fa-plus"> Hutang</i></button><br>
+        <!-- Content Row -->
+        <div class="row">
             <!-- Area Chart -->
             <div class="col-xl-8 col-lg-7">
               <div class="card shadow mb-4">
@@ -228,18 +225,19 @@ $query = mysqli_query($koneksi,"SELECT * FROM hutang where jumlah > 1000 ORDER B
 while ($data = mysqli_fetch_assoc($query)) 
 {
 ?>
-                    <tr>
-					<!-- <td>< ?=is_null($data)?></td> -->
-                      <td><?php echo $data['jumlah'] ?></td>
-                      <td><?php echo $data['tgl_hutang'] ?></td>
-                      <td><?php echo $data['alasan'] ?></td>
-                      <td><?php echo $data['penghutang'] ?></td>
+            <tr>
+					  <!-- <td>< ?=is_null($data)?></td> -->
+            <!-- <td>< ?php echo $data['jumlah'] ?></td> -->
+            <td>Rp. <?= number_format($data['jumlah'], 2, ',', '.'); ?></td>
+            <td><?php echo $data['tgl_hutang'] ?></td>
+            <td><?php echo $data['alasan'] ?></td>
+            <td><?php echo $data['penghutang'] ?></td>
 					  <td>
-                    <!-- Button untuk modal -->
-<a href="#" type="button" class=" fa fa-edit btn btn-primary btn-md" data-toggle="modal" data-target="#myModal<?php echo $data['id_hutang']; ?>"></a>
+          <!-- Button untuk modal -->
+<a href="#" type="button" class=" fa fa-edit btn btn-danger btn-md" data-toggle="modal" data-target="#myModal<?php echo $data['id_hutang']; ?>"></a>
 </td>
 </tr>
-<!-- Modal Edit Mahasiswa-->
+<!-- Modal Edit Hutang-->
 <div class="modal fade" id="myModal<?php echo $data['id_hutang']; ?>" role="dialog">
 <div class="modal-dialog">
 
@@ -284,7 +282,7 @@ while ($row = mysqli_fetch_array($query_edit)) {
 
 <div class="modal-footer">  
 <button type="submit" class="btn btn-success">Ubah</button>
-<a href="hapus-hutang.php?id_hutang=<?=$row['id_hutang'];?>" Onclick="confirm('Anda Yakin Ingin Menghapus?')" class="btn btn-danger">Hapus</a>
+<a href="hapus-hutang.php?id_hutang=<?=$row['id_hutang'];?>" onclick="return hapusData()" class="btn btn-danger">Hapus</a>
 <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
 </div>
 <?php 
@@ -562,6 +560,26 @@ var myLineChart = new Chart(ctx, {
         cutoutPercentage: 80,
       },
     });
+  </script>
+
+<script type="text/javascript" >
+    function validasi() {
+      if(document.getElementById("sumber").value=="none"){
+        alert("Pilih sumber!");
+        return false;
+      }
+      else{
+        return true;
+      }
+    }
+    function hapusData(){
+      var hapus = confirm("Anda yakin ingin menghapus?");
+      if (hapus) {
+        return true;
+      }else{
+        return false;
+      }
+    }
   </script>
 
 <script language="javascript">

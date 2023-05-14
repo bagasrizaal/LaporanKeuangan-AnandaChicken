@@ -346,7 +346,7 @@ WHERE tgl_pengeluaran = DATE_SUB(DATE(NOW()), INTERVAL 7 DAY) AND DATE_SUB(DATE(
                         <?= $data['tgl_pengeluaran'] ?>
                       </td>
                       <td>Rp. <?= number_format($data['jumlah'], 2, ',', '.'); ?></td>
-                      <td>
+                      <td.
                         <?php
                         $id_sumber = $data["id_sumber"];
                           $querysumber = mysqli_query($koneksi, "SELECT * FROM sumber where id_sumber = '$id_sumber'");
@@ -441,7 +441,7 @@ WHERE tgl_pengeluaran = DATE_SUB(DATE(NOW()), INTERVAL 7 DAY) AND DATE_SUB(DATE(
                                 <div class="modal-footer">
                                   <button type="submit" class="btn btn-success">Ubah</button>
                                   <a href="hapus-pengeluaran.php?id_pengeluaran=<?= $row['id_pengeluaran']; ?>"
-                                    Onclick="confirm('Anda Yakin Ingin Menghapus?')" class="btn btn-danger">Hapus</a>
+                                    onclick="return hapusData()" class="btn btn-danger">Hapus</a>
                                   <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
                                 </div>
                                 <?php
@@ -519,6 +519,15 @@ WHERE tgl_pengeluaran = DATE_SUB(DATE(NOW()), INTERVAL 7 DAY) AND DATE_SUB(DATE(
         return true;
       }
 
+    }
+
+    function hapusData(){
+      var hapus = confirm("Anda yakin ingin menghapus?");
+      if (hapus) {
+        return true;
+      }else{
+        return false;
+      }
     }
     
     // Set new default font family and font color to mimic Bootstrap's default styling
