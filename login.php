@@ -48,8 +48,7 @@
                     <div class="custom-control custom-checkbox small">
                         <!-- <input type="checkbox" class="custom-control-input" id="customCheck"> -->
                         <a href="" data-toggle="modal" data-target="#myModalTambah"><label class="">Daftar Akun</label></a>
-                        
-                        
+                           
                     </div>
                     <input type="submit" name="submit" class="btn btn-primary btn-user btn-block" value="Masuk">
                   </form>
@@ -58,9 +57,7 @@
 
           </div>
       </div>
-
     </div>
-
   </div>
 
   <!-- Modal -->
@@ -121,8 +118,7 @@
       }
       else{
         return true;
-      }
-      
+      }    
     }
 
   </script>
@@ -134,9 +130,7 @@
       $(this).val(function(index, value){
         return value
         .replace(/([^a-zA-Z\s])/g,"").replace(/([\s]{2,})/g," ");
-        
       });
-    
     });
 
     $('input.kalimat').focusout(function(event){
@@ -144,10 +138,8 @@
     
       $(this).val(function(index, value){
         return value
-        .replace(/([^a-zA-Z\s])/g,"").replace(/([\s]{2,})/g,"");
-        
+        .replace(/([^a-zA-Z\s])/g,"").replace(/([\s]{2,})/g,"");  
       });
-    
     });
 
     //saat kursor input field aktif
@@ -157,10 +149,8 @@
     $(this).val(function(index, value){
         //menghapus semua karakter yang bukan angka
         return value
-        .replace(/([^0-9])/g,"");
-        
+        .replace(/([^0-9])/g,"");      
       });
-    
     });
 
     $('input.angka').focusout(function(event){
@@ -169,15 +159,10 @@
     $(this).val(function(index, value){
         //menghapus semua karakter yang bukan angka
         return value
-        .replace(/([^0-9])/g,"");
-        
+        .replace(/([^0-9])/g,"");     
       });
-
     });
   </script>
 
-  
-
 </body>
-
 </html>

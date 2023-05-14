@@ -14,7 +14,8 @@ $data = mysqli_query($koneksi,"select * from admin where email='$email' and pass
  
 // menghitung jumlah data yang ditemukan
 $cek = mysqli_num_rows($data);
- 
+// $cek = mysqli_result($data,0);
+
 if($cek > 0){
 $sesi = mysqli_query($koneksi,"select * from admin where email='$email' and pass='$pass'");
 $sesi = mysqli_fetch_assoc($sesi);

@@ -11,11 +11,11 @@ $pass = $_GET["pass"];
 
 //menambah karyawan
 $query = mysqli_query($koneksi, "INSERT INTO `karyawan` ( `nama`, `posisi`, `alamat`, `umur`, `kontak`) VALUES ( '$nama', '$posisi', '$alamat', '$umur', '$kontak')");
-// membuat akun karyawan
+//membuat akun karyawan
 $query = mysqli_query($koneksi, "INSERT INTO `admin` (nama, email, pass) VALUES ('$nama', '$kontak', '$pass')");
 
 if ($query) {
-    # credirect ke page index
+    # redirect ke page karyawan.php
     header("location:karyawan.php");
 } else {
     echo "ERROR, data gagal diupdate" . mysqli_error($koneksi);

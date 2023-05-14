@@ -4,11 +4,11 @@ include('koneksi.php');
 
 $id = $_GET['id_pemasukan'];
 
-//query update
+//query update tabel pemasukan
 $query = mysqli_query($koneksi,"DELETE FROM `pemasukan` WHERE id_pemasukan = '$id'");
 
 if ($query) {
- # credirect ke page index
+ # redirect ke page index
  header("location:pendapatan.php"); 
 }
 else{

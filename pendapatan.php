@@ -34,13 +34,12 @@ require 'cek-sesi.php';
   require('sidebar.php'); 
   
   $sekarang = mysqli_query($koneksi, "SELECT jumlah FROM pemasukan
-WHERE tgl_pemasukan = CURDATE()");
+  WHERE tgl_pemasukan = CURDATE()");
   $sekarang = mysqli_fetch_array($sekarang);
 
   $satuhari = mysqli_query($koneksi, "SELECT jumlah FROM pemasukan 
   WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 1 DAY) AND DATE_SUB(DATE(NOW()), INTERVAL 1 DAY)");
   $satuhari = mysqli_fetch_array($satuhari);
-
 
   $duahari = mysqli_query($koneksi, "SELECT jumlah FROM pemasukan 
   WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 2 DAY) AND DATE_SUB(DATE(NOW()), INTERVAL 1 DAY)");
@@ -51,19 +50,19 @@ WHERE tgl_pemasukan = CURDATE()");
   $tigahari = mysqli_fetch_array($tigahari);
 
   $empathari = mysqli_query($koneksi, "SELECT jumlah FROM pemasukan 
-WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 4 DAY) AND DATE_SUB(DATE(NOW()), INTERVAL 1 DAY)");
+  WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 4 DAY) AND DATE_SUB(DATE(NOW()), INTERVAL 1 DAY)");
   $empathari = mysqli_fetch_array($empathari);
 
   $limahari = mysqli_query($koneksi, "SELECT jumlah FROM pemasukan 
-WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 5 DAY) AND DATE_SUB(DATE(NOW()), INTERVAL 1 DAY)");
+  WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 5 DAY) AND DATE_SUB(DATE(NOW()), INTERVAL 1 DAY)");
   $limahari = mysqli_fetch_array($limahari);
 
   $enamhari = mysqli_query($koneksi, "SELECT jumlah FROM pemasukan 
-WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 6 DAY) AND DATE_SUB(DATE(NOW()), INTERVAL 1 DAY)");
+  WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 6 DAY) AND DATE_SUB(DATE(NOW()), INTERVAL 1 DAY)");
   $enamhari = mysqli_fetch_array($enamhari);
 
   $tujuhhari = mysqli_query($koneksi, "SELECT jumlah FROM pemasukan 
-WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 7 DAY) AND DATE_SUB(DATE(NOW()), INTERVAL 1 DAY)");
+  WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 7 DAY) AND DATE_SUB(DATE(NOW()), INTERVAL 1 DAY)");
   $tujuhhari = mysqli_fetch_array($tujuhhari);
   ?>
   <!-- Main Content -->
@@ -403,7 +402,7 @@ WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 7 DAY) AND DATE_SUB(DATE(NO
                                   <input type="text" name="jumlah" class="form-control angka"
                                     value="<?php echo $row['jumlah']; ?>">
                                 </div>
-
+                                
                                 <div class="form-group" >
                                   <label>Sumber</label>
                                   <?php
@@ -444,7 +443,7 @@ WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 7 DAY) AND DATE_SUB(DATE(NO
                                 <div class="modal-footer">
                                   <button type="submit" class="btn btn-success">Ubah</button>
                                   <a href="hapus-pemasukan.php?id_pemasukan=<?= $row['id_pemasukan']; ?>"
-                                    Onclick="confirm('Anda Yakin Ingin Menghapus?')" class="btn btn-danger">Hapus</a>
+                                    onclick="return hapusData()" class="btn btn-danger">Hapus</a>
                                   <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
                                 </div>
                                 <?php
@@ -458,10 +457,6 @@ WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 7 DAY) AND DATE_SUB(DATE(NO
 
                       </div>
                     </div>
-
-
-
-                    
 
 
                     <?php
@@ -525,8 +520,16 @@ WHERE tgl_pemasukan = DATE_SUB(DATE(NOW()), INTERVAL 7 DAY) AND DATE_SUB(DATE(NO
       else{
         return true;
       }
-      
     }
+    function hapusData(){
+      var hapus = confirm("Anda yakin ingin menghapus?");
+      if (hapus) {
+        return true;
+      }else{
+        return false;
+      }
+    }
+
     function number_format(number, decimals, dec_point, thousands_sep) {
       // *     example: number_format(1234.56, 2, ',', ' ');
       // *     return: '1 234,56'

@@ -12,13 +12,14 @@ require 'cek-sesi.php';
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <link rel="shortcut icon" type="image/x-icon" href="img/ICON_ANANDACHICKEN.png"/>
+  <link rel="shortcut icon" type="image/x-icon" href="img/ICON_ANANDACHICKEN.png" />
 
   <title>Detail Laporan</title>
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet">
 
   <!-- Custom styles for this template -->
@@ -31,39 +32,39 @@ require 'cek-sesi.php';
 
 <body id="page-top">
 
-<?php 
+  <?php 
 require 'koneksi.php';
 require 'sidebar.php'; ?>
 
-      <!-- Main Content -->
-      <div id="content">
+  <!-- Main Content -->
+  <div id="content">
 
-<?php $halamanaktif = "Laporan";?>
-<?php require 'navbar.php'; ?>
+    <?php $halamanaktif = "Laporan";?>
+    <?php require 'navbar.php'; ?>
 
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
 
-                   <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Detail Laporan</h6>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Kategori</th>
-                      <th>Jumlah Transaksi </th>
-                      <th>Jumlah Total Uang</th>
-					  <th>Download</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                  </tfoot>
-                  <tbody>
-				  <?php 
+      <!-- DataTales Example -->
+      <div class="card shadow mb-4">
+        <div class="card-header py-3">
+          <h6 class="m-0 font-weight-bold text-primary">Detail Laporan</h6>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Kategori</th>
+                  <th>Jumlah Transaksi </th>
+                  <th>Jumlah Total Uang</th>
+                  <th>Download</th>
+                </tr>
+              </thead>
+              <tfoot>
+              </tfoot>
+              <tbody>
+                <?php 
 $pemasukan=mysqli_query($koneksi,"SELECT * FROM pemasukan");
 while ($masuk=mysqli_fetch_array($pemasukan)){
 $arraymasuk[] = $masuk['jumlah'];
@@ -84,42 +85,44 @@ $query2 = mysqli_query($koneksi,"SELECT id_pengeluaran FROM pengeluaran");
 $query2 = mysqli_num_rows($query2);
 $no = 1;
 ?>
-                    <tr>
-                      <td>Pemasukan</td>
-                      <td><?=$query1?></td>
-                      <td>Rp. <?=number_format($jumlahmasuk,2,',','.');?></td>
-					  <td>
+                <tr>
+                  <td>Pemasukan</td>
+                  <td><?=$query1?></td>
+                  <td>Rp. <?=number_format($jumlahmasuk,2,',','.');?></td>
+                  <td>
                     <!-- Button untuk modal -->
-<a href="export-pemasukan.php" type="button" class="btn btn-primary btn-md"><i class="fa fa-download"></i></a>
-</td>
-</tr>
+                    <a href="export-pemasukan.php" type="button" class="btn btn-primary btn-md"><i
+                        class="fa fa-download"></i></a>
+                  </td>
+                </tr>
 
-                    <tr>
-                      <td>Pengeluaran</td>
-                      <td><?=$query2?></td>
-                      <td>Rp. <?=number_format($jumlahkeluar,2,',','.');?></td>
-					  <td>
+                <tr>
+                  <td>Pengeluaran</td>
+                  <td><?=$query2?></td>
+                  <td>Rp. <?=number_format($jumlahkeluar,2,',','.');?></td>
+                  <td>
                     <!-- Button untuk modal -->
-<a href="export-pengeluaran.php" type="button" class="btn btn-primary btn-md"><i class="fa fa-download"></i></a>
-</td>
-</tr>
+                    <a href="export-pengeluaran.php" type="button" class="btn btn-primary btn-md"><i
+                        class="fa fa-download"></i></a>
+                  </td>
+                </tr>
 
 
-                  </tbody>
-                </table>
-              </div>
-            </div>
+              </tbody>
+            </table>
           </div>
         </div>
-        <!-- /.container-fluid -->
-
       </div>
-      <!-- End of Main Content -->
-
-<?php require 'footer.php'?>
-
     </div>
-    <!-- End of Content Wrapper -->
+    <!-- /.container-fluid -->
+
+  </div>
+  <!-- End of Main Content -->
+
+  <?php require 'footer.php'?>
+
+  </div>
+  <!-- End of Content Wrapper -->
 
   </div>
   <!-- End of Page Wrapper -->
@@ -130,7 +133,7 @@ $no = 1;
   </a>
 
   <!-- Logout Modal-->
-<?php require 'logout-modal.php';?>
+  <?php require 'logout-modal.php';?>
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
